@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.1 on win32)" generated="2026-07-11T22:22:26.130758" rpa="false" schemaversion="5">
+<suite id="s1" name="Examples" source="C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\tests\ui\examples.robot">
+<kw name="SuiteSetup" owner="common" type="SETUP">
+<kw name="Remove Files" owner="OperatingSystem">
+<msg time="2026-07-11T22:22:30.333336" level="INFO" html="true">File '&lt;a href="file://C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\log\selenium-screenshot-*.png"&gt;C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\log\selenium-screenshot-*.png&lt;/a&gt;' does not exist.</msg>
+<arg>${OUTPUTDIR}/selenium-screenshot-*.png</arg>
+<doc>Uses `Remove File` to remove multiple files one-by-one.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.333336" elapsed="0.005430"/>
+</kw>
+<kw name="Remove Files" owner="OperatingSystem">
+<msg time="2026-07-11T22:22:30.338766" level="INFO" html="true">Removed file '&lt;a href="file://C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\libraries\__pycache__\common.cpython-311.pyc"&gt;C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\libraries\__pycache__\common.cpython-311.pyc&lt;/a&gt;'.</msg>
+<arg>resources/libraries/__pycache__/*</arg>
+<doc>Uses `Remove File` to remove multiple files one-by-one.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.000000"/>
+</kw>
+<kw name="Load Variables" owner="common">
+<kw name="Define Environment Variables From Json File" owner="common">
+<msg time="2026-07-11T22:22:30.338766" level="INFO">Looking for ui_demo environment
+Found an environment ui_demo!</msg>
+<msg time="2026-07-11T22:22:30.338766" level="INFO">&amp;{vars} = { environment=ui_demo | host=https://www.saucedemo.com/ | user_email=standard_user | user_password=secret_sauce }</msg>
+<var>&amp;{vars}</var>
+<arg>${env}</arg>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">Key is 'environment' and value is 'ui_demo'.</msg>
+<arg>Key is '${key}' and value is '${value}'.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.007173"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${var_value} = ui_demo</msg>
+<var>${var_value}</var>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${environment} = ui_demo</msg>
+<arg>${${key}}</arg>
+<arg>${var_value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<var name="${key}">environment</var>
+<var name="${value}">ui_demo</var>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.007173"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">Key is 'host' and value is 'https://www.saucedemo.com/'.</msg>
+<arg>Key is '${key}' and value is '${value}'.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${var_value} = https://www.saucedemo.com/</msg>
+<var>${var_value}</var>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${host} = https://www.saucedemo.com/</msg>
+<arg>${${key}}</arg>
+<arg>${var_value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<var name="${key}">host</var>
+<var name="${value}">https://www.saucedemo.com/</var>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">Key is 'user_email' and value is 'standard_user'.</msg>
+<arg>Key is '${key}' and value is '${value}'.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${var_value} = standard_user</msg>
+<var>${var_value}</var>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${user_email} = standard_user</msg>
+<arg>${${key}}</arg>
+<arg>${var_value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<var name="${key}">user_email</var>
+<var name="${value}">standard_user</var>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">Key is 'user_password' and value is 'secret_sauce'.</msg>
+<arg>Key is '${key}' and value is '${value}'.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${var_value} = secret_sauce</msg>
+<var>${var_value}</var>
+<arg>${${key}}</arg>
+<arg>${value}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">${user_password} = secret_sauce</msg>
+<arg>${${key}}</arg>
+<arg>${var_value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</kw>
+<var name="${key}">user_password</var>
+<var name="${value}">secret_sauce</var>
+<status status="PASS" start="2026-07-11T22:22:30.345939" elapsed="0.000000"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{vars}</value>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.007173"/>
+</for>
+<arg>${env}</arg>
+<status status="PASS" start="2026-07-11T22:22:30.338766" elapsed="0.007173"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2026-07-11T22:22:30.345939" level="INFO">{"browser": "chromium", "headless": true, "args": ["--ignore-certificate-errors"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Basant\\Downloads\\robot-framework-practice-master\\robot-framework-practice-master\\log\\browser\\traces\\temp\\090a2286-e952-4886-bf18-a730176f4bf5"}</msg>
+<msg time="2026-07-11T22:22:30.985154" level="INFO">Starting Browser process C:\Users\Basant\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61553</msg>
+<msg time="2026-07-11T22:27:51.409837" level="FAIL">Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+<arg>${browser}</arg>
+<arg>headless=${headless}</arg>
+<arg>args=['--ignore-certificate-errors']</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2026-07-11T22:22:30.345939" elapsed="321.115729">Could not connect to the playwright process at 127.0.0.1:61553.</status>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<arg>${browser_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.461668" elapsed="0.001012"/>
+</kw>
+<kw name="Create default Main Context" owner="common">
+<status status="NOT RUN" start="2026-07-11T22:27:51.464066" elapsed="0.001017"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>${host}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.465083" elapsed="0.000998"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>5</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.467087" elapsed="0.000999"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${random}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.468086" elapsed="0.000995"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<var>${today}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.469081" elapsed="0.001070"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${today}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.471431" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${test_customer_email}</var>
+<arg>test.1+${random}@gmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.471431" elapsed="0.001105"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${test_customer_email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2026-07-11T22:27:51.472536" elapsed="0.001012"/>
+</kw>
+<return>
+<value>${random}</value>
+<status status="NOT RUN" start="2026-07-11T22:27:51.473548" elapsed="0.000000"/>
+</return>
+<doc>Basic steps before each suite</doc>
+<status status="FAIL" start="2026-07-11T22:22:30.333336" elapsed="321.141258">Could not connect to the playwright process at 127.0.0.1:61553.</status>
+</kw>
+<test id="s1-t1" name="login_funtionality" line="10">
+<status status="FAIL" start="2026-07-11T22:27:51.474594" elapsed="319.992055">Parent suite setup failed:
+Could not connect to the playwright process at 127.0.0.1:61553.</status>
+</test>
+<test id="s1-t2" name="test_win" line="15">
+<status status="FAIL" start="2026-07-11T22:38:31.952584" elapsed="320.647994">Parent suite setup failed:
+Could not connect to the playwright process at 127.0.0.1:61553.</status>
+</test>
+<status status="FAIL" start="2026-07-11T22:22:26.130758" elapsed="1606.849482">Suite setup failed:
+Could not connect to the playwright process at 127.0.0.1:61553.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Examples" id="s1" pass="0" fail="2" skip="0">Examples</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-07-11T22:22:26.224967" level="WARN">Error in file 'C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\common\common.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-07-11T22:22:26.224967" level="WARN">Error in file 'C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\common\common.robot' on line 73: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-07-11T22:22:26.224967" level="WARN">Error in file 'C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\common\common.robot' on line 132: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-07-11T22:22:26.226981" level="WARN">Error in file 'C:\Users\Basant\Downloads\robot-framework-practice-master\robot-framework-practice-master\resources\common\common.robot' on line 138: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-07-11T22:33:11.466141" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+<msg time="2026-07-11T22:38:31.948555" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+<msg time="2026-07-11T22:43:52.600578" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+<msg time="2026-07-11T22:49:12.980240" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+<msg time="2026-07-11T22:54:34.022371" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: Could not connect to the playwright process at 127.0.0.1:61553.</msg>
+</errors>
+</robot>
